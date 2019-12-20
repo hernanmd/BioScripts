@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./uncolumnize.sh SANOS-LR.txt 7
+./uncolumnize.sh SANOS-RLCC.txt 7
