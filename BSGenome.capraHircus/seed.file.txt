@@ -1,0 +1,15 @@
+Package: BSgenome.CapraHircus.NCBI
+Title: Capra Hircus (Goat) full genome (NCBI version GCF_001704415.1)
+Description: CapraHircus full genome as provided by NCBI (GCF_001704415.1) and stored in Biostrings objects.
+Version: 1.0
+organism: Capra Hircus
+common_name: Goat
+provider: NCBI
+provider_version: GCF_001704415.1
+release_date: Jan. 2020
+release_name: IGEVET GCF_001704415.1
+source_url: https://www.ncbi.nlm.nih.gov/assembly/GCF_000331145.1/#/def
+organism_biocview: Capra_Hircus
+BSgenomeObjname: CapraHircus
+seqnames: paste("Ca_", paste("chr", c(1:2), sep=""), sep="")
+seqs_srcdir: /home/hernan/goat
