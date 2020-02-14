@@ -13,6 +13,14 @@ Class {
 }
 
 { #category : #comparing }
+IG2020_Tr1Sample >> < anIG2020_Tr1Sample [
+
+	self breed < anIG2020_Tr1Sample breed 
+		and: [ self sex < anIG2020_Tr1Sample sex 
+			and: [ self age < anIG2020_Tr1Sample age ] ]
+]
+
+{ #category : #comparing }
 IG2020_Tr1Sample >> = anIG2020_Tr1Sample [
 
 	self class = anIG2020_Tr1Sample class
@@ -77,9 +85,8 @@ IG2020_Tr1Sample >> printOn: aStream [
 
 	aStream
 		nextPutAll: self breed between: $[ and: $];
-		nextPutAll: self sex between: $- and: $-;
-		space;
-		nextPutAll: self age
+		nextPutAll: self sex between: $- and: $- onNilPut: '?';
+		nextPutAll: self age onNilPut: '?'
 ]
 
 { #category : #accessing }
